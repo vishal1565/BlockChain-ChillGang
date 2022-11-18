@@ -8,7 +8,7 @@ contract FeeCollector  {
     uint256 public balance;
     
     event TransferReceived(address _from, uint _amount);
-    event TransferSent(address _from, address _destAddr, float _amount);
+    event TransferSent(address _from, address _destAddr, uint _amount);
     
     constructor() {
         owner = msg.sender;
